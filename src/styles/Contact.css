@@ -1,0 +1,41 @@
+/* Home.css */
+
+/* Styles for the home section */
+#home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full viewport height */
+    background: linear-gradient(to right, #ff7e5f, #feb47b); /* Warm gradient background */
+    color: #fff; /* White text */
+    text-align: center; /* Center-align text */
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Styles for the heading */
+#home h1 {
+    font-size: 3rem; /* Large font size */
+    font-weight: bold; /* Bold text */
+    margin: 0; /* Remove default margin */
+    animation: fadeIn 1.5s ease-in-out; /* Add fade-in animation */
+}
+
+/* Keyframes for fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    #home h1 {
+        font-size: 2rem; /* Smaller font size */
+    }
+}
